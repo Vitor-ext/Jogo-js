@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NetFlix Clone</title>
+    <title>Apostas</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <main>
-        <header class="header-movies">
+        <header class="header">
             <div class="container">
-                <h1 class="header-movies__title">SENAI - FRONT END</h1>
+                <h1 class="header__title">Teste sua Sorte</h1>
             </div>
         </header>
-        <section class="section-movies">
-            <div class="container">
-                <div class="app-movies">
-                    <h2 class="app-movies__title">Filmes, séries e muito mais. Sem limites.</h2>
-                    <h3 class="app-movies__subtitle">Adicione canais que você ama na sua assinatura!</h3>
-                    <form class="form" method="GET">
-                        <input type="text" placeholder="Buscar filme" name="movie" class="form__input" >
-                        <input type="submit" class="form__submit" value="Vamos lá">
-                    </form>
-                </div>
-                <ul class="app-movies-all" id="movies"></ul>
-            </div>
-        </section>
+        <div class="form">
+            <p class="text">Digite seu numero da Sorte</p>
+            <p><input class="input" type="number" id="sorte"></p>
+            <button class="button" onclick="sorteio()">Sortear</button>
+            <button class="button" onclick="reload()">Restart</button>
+            <h1 class="Nsorteado" id="resultado"></h1>
+            <h1 class="Nsorteado" id="info"></h1>
+        </div>
+
+        <footer>
+            <p>Copyright 2022 © | ❤🚀❤ Vitor de Jesus ❤🚀❤</p>
+        </footer
+
     </main>
 
-   <script src="./js/netflix.js"></script>
-
+    <script src="./js/aposta.js"></script>
+ 
 </body>
+
 </html>
